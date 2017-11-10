@@ -1,0 +1,32 @@
+<?php 
+
+	include_once './db_functions.php';
+ $place=$_REQUEST["name"];
+//$place='Mangalore';	
+	$db = new DB_Functions();
+	$response["data"]["bloodbank"]=array();
+
+	  $Result = $db->searchBloodBank($place);
+	  if(mysql_affected_rows()>0){
+			$response["status"]["code"]=1;
+			$response["status"]["message"]="";
+			while($row=mysql_fetch_array($Result)){
+				$bloodbank=array();
+				$bloodbank["place"]=$row["place"];
+                                $bloodbank["id"]=$row["bloodbank_id"];
+				$bloodbank["name"]=$row["name"];
+				$bloodbank["phone"]=$row["phone"];
+                                $bloodbank["email"]=$row["email"];
+				array_push($response["data"]["bloodbank"],$bloodbank);
+				
+			}
+			echo json_encode($response);
+			exit(0);
+	  }
+	  else{
+		        $response["status"]["code"]=0;
+			$response["status"]["message"]="No details"; 
+			echo json_encode($response);
+			exit(0);
+	  }
+?>

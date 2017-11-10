@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.blooddonar.MainActivity" >
+
+        <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/primary"
+            android:text="Sign In"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    
+        <Button
+        android:id="@+id/btn_donor"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignBaseline="@+id/btn_blood"
+        android:layout_alignBottom="@+id/btn_blood"
+        android:layout_alignRight="@+id/btn_hospital"
+        android:background="@drawable/donor"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btn_general"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignLeft="@+id/btn_blood"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/general" />
+
+    <Button
+        android:id="@+id/btn_feedback"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignBaseline="@+id/btn_general"
+        android:layout_alignBottom="@+id/btn_general"
+        android:layout_alignLeft="@+id/btn_donor"
+        android:background="@drawable/feed" />
+
+    <Button
+        android:id="@+id/btn_blood"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_above="@+id/btn_general"
+        android:layout_alignLeft="@+id/btn_search"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/bb" />
+
+    <Button
+        android:id="@+id/btn_hospital"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignBaseline="@+id/btn_search"
+        android:layout_alignBottom="@+id/btn_search"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/hospital" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_above="@+id/btn_blood"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_marginBottom="39dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/search" />
+
+</RelativeLayout>

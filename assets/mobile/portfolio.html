@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	
+	<link rel="apple-touch-icon" href="images/icon.png" />
+	<link rel="apple-touch-startup-image" href="images/splash.png">
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/reset.css" />	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/skin.css" />
+	
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.slider.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("#nav").hide(); 
+			$(".toggle").click(function() {
+				$(this).next().slideToggle("fast");
+				return false;
+			});
+	});
+	</script>
+	
+	<title>YourSiteName</title>
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	left: 630px;
+	top: 221px;
+}
+</style>
+</head>
+
+<body onorientationchange="Orientation();">
+
+<div id="wrapper">
+
+	<!-- HEADER -->
+  <div id="header">
+	
+	<h1 id="logo">TOTO</h1>
+
+	  <!-- NAVIGATION -->
+  <div id="nav">
+		
+		<ul class="group">
+			<li><a href="portfolio.html" onclick="return link(this)">Know About Blood</a></li>
+			<li><a href="about.html" onclick="return link(this)">About Us</a></li>
+			
+			<li><a href="contact.html" onclick="return link(this)">About Hospital</a></li>
+			<li></li>			
+		</ul>
+	
+		
+	  </div> <!-- /nav -->
+		
+	</div> 
+	<!-- /header -->
+	
+	<!-- CONTENT -->
+  <div id="content">	
+
+		<h2 class="page-title">Know about Blood</h2><!-- /text-box -->
+    <ul class="portfolio box">
+<li>	
+				<h2>How to prepare to donate blood</h2>
+               <p>http://m.wikihow.com/prrepare-to-Donate-Blood</p>
+</li>
+<li></li>
+<li>
+  <p><img src="images/yy.png" width="284" height="208" alt="gf"></p>
+</li>
+<li> </li>
+</ul>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <ul class="portfolio box">
+      <li>	
+        <h2>Who can donate blood to whome</h2>
+        
+        <p>http://m.redcrossblood.org/learn-about-blood/blood-types/</p>
+      </li>
+      <li></li>
+      <li>
+        <p><img src="images/zz.png" width="322" height="235" alt="cv"></p>
+      </li>
+      <li>. </li>
+    </ul>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <ul class="portfolio box">
+      
+      
+      <li>	
+        <h2>Learn about Blood</h2>
+        
+        <p>http://www.carterbloodcare.org/blood-facts/blood-types/</p>
+      </li>
+      <li> </li>
+      <li>
+        <p><img src="images/zzz.png" width="299" height="246" alt="jhgfd"></p>
+      </li>
+      <li>
+        <p>&nbsp;</p>		
+      </li>
+      <li> </li>
+    </ul>
+		
+	</div> <!-- /content -->
+	
+	<!-- FOOTER --><!-- /footer -->
+
+</div> <!-- /wrapper -->
+
+</body>
+</html>

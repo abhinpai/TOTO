@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.blooddonar"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SignIn"
+            android:label="@string/title_activity_sign_in" >
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:label="@string/title_activity_splash" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SearchDetails"
+            android:label="@string/title_activity_search_details" >
+        </activity>
+        <activity
+            android:name=".HomeAdmin"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name=".AddHospitals"
+            android:label="@string/title_activity_add_hospitals" >
+        </activity>
+        <activity
+            android:name=".AddBloodBanks"
+            android:label="@string/title_activity_add_blood_banks" >
+        </activity>
+        <activity
+            android:name=".ViewHospitals"
+            android:label="@string/title_activity_view_hospitals" >
+        </activity>
+        <activity
+            android:name=".ViewBloodBanks"
+            android:label="@string/title_activity_view_blood_banks" >
+        </activity>
+        <activity
+            android:name=".ViewUser"
+            android:label="@string/title_activity_view_user" >
+        </activity>
+        <activity
+            android:name=".EditHospital"
+            android:label="@string/title_activity_edit_hospital" >
+        </activity>
+        <activity
+            android:name=".EditBloodBank"
+            android:label="@string/title_activity_edit_blood_bank" >
+        </activity>
+        <activity
+            android:name=".HospitalDetails"
+            android:label="@string/title_activity_hospital_details" >
+        </activity>
+        <activity
+            android:name=".BloodBankDetails"
+            android:label="@string/title_activity_blood_bank_details" >
+        </activity>
+        <activity
+            android:name=".InfoWeb"
+            android:label="@string/title_activity_info_web" >
+            
+                       
+        </activity>
+    </application>
+
+</manifest>

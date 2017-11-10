@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group>
+        <item
+            android:id="@+id/menu_search"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Search">
+        </item>
+        <item
+            android:id="@+id/menu_feedback"
+            android:icon="@drawable/ic_feedback_black_24dp"
+            android:title="Feedback">
+        </item>
+        
+         <item
+            android:id="@+id/menu_hospital"
+            android:icon="@drawable/ic_local_hospital_black_24dp"
+            android:title="Hospital">
+        </item>
+        
+          <item
+            android:id="@+id/menu_bloodbank"
+            android:icon="@drawable/ic_blood"
+            android:title="Blood Bank">
+        </item>
+      
+    </group>
+
+</menu>

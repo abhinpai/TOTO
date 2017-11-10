@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	
+	<link rel="apple-touch-icon" href="images/icon.png" />
+	<link rel="apple-touch-startup-image" href="images/splash.png">
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/reset.css" />	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/skin.css" />
+	
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.slider.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("#nav").hide(); 
+			$(".toggle").click(function() {
+				$(this).next().slideToggle("fast");
+				return false;
+			});
+	});
+	</script>
+	
+	<title>YourSiteName</title>
+</head>
+
+<body onorientationchange="Orientation();">
+
+<div id="wrapper">
+
+	<!-- HEADER -->
+	<div id="header">
+	
+		<h1 id="logo"><a href="index.html" onclick="return link(this)">YourSiteName</a></h1>
+
+		<a class="header-button toggle">Menu</a>
+
+		<!-- NAVIGATION -->
+		<div id="nav">
+		
+			<ul>
+				<li><a href="index.html" onclick="return link(this)">Homepage</a></li>
+				<li><a href="about.html" onclick="return link(this)">About Us</a></li>
+				<li><a href="portfolio.html" onclick="return link(this)">Portfolio</a></li>
+				<li><a href="gallery.html" onclick="return link(this)">Image Gallery</a></li>
+				<li><a href="contact.html" onclick="return link(this)">Contact</a></li>
+				<li><a href="styles.html" onclick="return link(this)">Styles</a></li>				
+			</ul>
+		
+		</div> <!-- /nav -->
+		
+	</div> <!-- /header -->
+	
+	<!-- CONTENT -->
+	<div id="content">	
+
+		<h2 class="page-title">Image Gallery</h2>
+
+		<div class="text-box">
+		
+			<p>This gallery contains <strong>30 images</strong>.</p>
+		
+		</div> <!-- /text-box -->
+		
+		<!-- IMAGES (75x75px) -->
+		<ul class="gallery box">
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-01.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-02.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-03.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-04.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-05.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-06.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-01.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-02.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-03.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-04.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-05.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-06.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-01.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-02.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-03.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-04.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-05.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-06.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-01.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-02.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-03.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-04.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-05.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-06.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-01.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-02.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-03.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-04.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-05.jpg" alt="" /></a></li>
+			<li><a href="#" onclick="return link(this)"><img src="images/gallery-06.jpg" alt="" /></a></li>
+		</ul>
+
+		<!-- PAGINATION -->
+		<p class="pagination box">
+			<a href="#" onclick="return link(this)" class="pagination-step">&laquo;</a>
+			<a href="#" onclick="return link(this)">1</a>
+			<strong>2</strong>
+			<a href="#" onclick="return link(this)">3</a>
+			<a href="#" onclick="return link(this)">4</a>
+			<a href="#" onclick="return link(this)">5</a>
+			<a href="#" onclick="return link(this)" class="pagination-step">&raquo;</a>
+		</p>	
+		
+	</div> <!-- /content -->
+	
+	<!-- FOOTER -->
+	<div id="footer">
+	
+		<p id="footer-button"><a onclick="jQuery('html,body').animate({scrollTop:0},'slow');" href="javascript:void(0);">Back on top</a></p>
+	
+		<p>&copy; 2011 <a href="http://www.motemplates.com/">MoTemplates.com</a></p>
+		
+	</div> <!-- /footer -->
+
+</div> <!-- /wrapper -->
+
+</body>
+</html>

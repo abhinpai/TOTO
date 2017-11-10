@@ -1,0 +1,160 @@
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+HTML
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+body {margin:0; line-height:20px; font-size:17px; font-family:"helvetica", sans-serif;}
+address, blockquote, dl, fieldset, form, h1, h2, h3, h4, h5, h6, ol, p, table, ul {margin:15px 0;}
+h1 {font-size:20px;}
+h2 {font-size:21px; font-weight:bold;}
+h2.page-title {margin-top:0; padding-bottom:5px; font-size:24px; font-weight:bold;}
+h3 {font-size:19px; font-weight:bold;}
+h4, h5, h6 {font-size:17px; font-weight:bold;}
+ul li {padding-left:17px; background:url("../design/ul.png") 0 7px no-repeat;}
+ul ul {margin:0; font-size:15px;}
+ul ul li {padding-left:15px; background:url("../design/ul-ul.png") 0 7px no-repeat;}
+table th {padding:5px; font-weight:bold; text-align:center;}
+table td {padding:5px;}
+fieldset {padding:9px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
+fieldset legend {font-weight:bold;}
+fieldset form, fieldset dl {margin:0;}
+fieldset dd {margin-bottom:5px;}
+img.f-left {margin-right:9px;}
+img.f-right {margin-left:9px;}
+.input-text {width:95%; padding:4px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:url("../design/input-text.png") 0 0 repeat-x;}
+.input-submit {padding:4px;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+LAYOUT
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#wrapper {
+	position:relative;
+	min-height:100%;
+	overflow:auto;
+	height: auto;
+}
+#header {position:relative; height:50px; padding:0 9px; background:url("../design/header.png") 0 0 repeat-x;}
+#header #logo {
+	position:absolute;
+	top:5px;
+	left:11px;
+	margin:0;
+	width: 83px;
+	height: 37px;
+}
+#header #logo a {text-decoration:none;}
+#header a.header-button {position:absolute; top:10px; right:9px; padding:5px 10px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:url("../design/header-button.png") 0 0 repeat-x; font-size:12px; text-decoration:none; text-align:center; font-weight:bold;}
+#nav {
+	position:absolute;
+	top:1462px;
+	left:1px;
+	z-index:999;
+	width:1262px;
+	-webkit-border-bottom-left-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+	-moz-border-bottom-left-radius:10px;
+	-moz-border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	height: 170px;
+}
+#nav ul {margin:0; padding:9px; list-style:none;}
+#nav ul li {display:inline; padding:0; background:none;}
+#nav ul li a {display:block; margin-bottom:5px; padding:9px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:url("../design/nav.png") 0 0 repeat-x; font-weight:bold; text-decoration:none; text-align:center;}
+#nav ul li:last-child a {margin-bottom:0;}
+#content {padding:15px 9px;}
+#footer {position:relative; padding:15px 9px; background:url("../design/footer.png") 0 0 repeat-x; font-size:12px;}
+#footer #footer-button a {
+	display:block;
+	position:absolute;
+	top:43px;
+	right:2px;
+	padding:5px 10px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	background:url("../design/footer-button.png") 0 100% repeat-x;
+	font-size:12px;
+	text-decoration:none;
+	text-align:center;
+	font-weight:bold;
+}
+#footer p {margin:0;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: HOMEPAGE
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.perex {margin:-15px -9px 0 -9px; padding:15px 9px; background:url("../design/perex.png") 0 100% repeat-x;}
+.perex p {margin:0;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: ABOUT US
+-------------------------------------------------------------------------------------------------------------------------------------------------- */	
+	
+.team li {padding:10px 0; background:none;}	
+.team li:last-child {padding-bottom:0; border:0;}
+	
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: PORTFOLIO
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+	
+.portfolio li {padding:10px 0; background:none;}	
+.portfolio li:last-child {padding-bottom:0; border:0;}
+.portfolio li h2, .portfolio li p {margin:0;}
+.portfolio li img {margin:7px 0;}
+	
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: IMAGE GALLERY
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.gallery {margin:15px -9px;}
+.gallery li {display:block; float:left; margin-left:4px; margin-bottom:4px; padding:0; background:none;}
+.gallery li img {display:block;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PORTLET: TEXT BOX
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.text-box {margin:15px 0; padding:9px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
+.text-box p:first-child {margin-top:0;} 
+.text-box p:last-child {margin-bottom:0;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PORTLET: PAGINATION
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.pagination {clear:both; text-align:center;}
+.pagination a {margin:0 3px; padding:5px 10px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; text-align:center; text-decoration:none; font-weight:bold;}
+.pagination strong {margin:0 3px; padding:5px 10px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; text-align:center;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PORTLET: GROUP OF LINKS
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.group {margin:10px 0; padding:0; list-style:none;}
+.group li {margin:0; padding:0; background:none;}
+.group li a {display:block; padding:10px; padding-right:35px; background:url("../design/arrow.png") 100% 50% no-repeat; text-decoration:none; font-weight:bold;}
+.group li a:hover {-webkit-tap-highlight-color:transparent;}
+.group li:first-child a {-webkit-border-top-left-radius:10px; -webkit-border-top-right-radius:10px; -moz-border-top-left-radius:10px; -moz-border-top-right-radius:10px; border-top-left-radius:10px; border-top-right-radius:10px;}
+.group li:last-child a {-webkit-border-bottom-left-radius:10px; -webkit-border-bottom-right-radius:10px; -moz-border-bottom-left-radius:10px; -moz-border-bottom-right-radius:10px; border-bottom-left-radius:10px; border-bottom-right-radius:10px;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PORTLET: IMAGE SLIDER
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#slider-box {margin:0 -9px; padding-top:15px; background:url("../design/slider.png") 0 0 repeat-x;}
+#slider {width:300px; margin:0 auto;}
+#slider ul, #slider li {margin:0; padding:0; list-style:none;}
+#slider li {width:300px; height:230px; overflow:hidden;}	
+#controls {width:300px; height:28px; margin:12px auto; padding:0;}
+#controls li {display:inline;}
+#controls li a {display:block; float:left; margin-left:9px; padding:5px 10px; -webkit-border-radius:15px; -moz-border-radius:15px; border-radius:15px; text-align:center; font-weight:bold; text-decoration:none;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PORTLET: TWITTER FEED
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#twitter_update_list {background:url("../design/twitter.png") 100% 100% no-repeat;}
+#twitter_update_list li {padding:0; background:none;}
+#twitter_update_list li span {display:block;}

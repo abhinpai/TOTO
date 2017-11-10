@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	
+	<link rel="apple-touch-icon" href="images/icon.png" />
+	<link rel="apple-touch-startup-image" href="images/splash.png">
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/reset.css" />	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/skin.css" />
+	
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.slider.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("#nav").hide(); 
+			$(".toggle").click(function() {
+				$(this).next().slideToggle("fast");
+				return false;
+			});
+	});
+	</script>
+	
+	<title>YourSiteName</title>
+</head>
+
+<body onorientationchange="Orientation();">
+
+<div id="wrapper">
+
+	<!-- HEADER -->
+	<div id="header">
+	
+		<h1 id="logo"><a href="index.html" onclick="return link(this)">YourSiteName</a></h1>
+
+		<a class="header-button toggle">Menu</a>
+
+		<!-- NAVIGATION -->
+		<div id="nav">
+		
+			<ul>
+				<li><a href="index.html" onclick="return link(this)">Homepage</a></li>
+				<li><a href="about.html" onclick="return link(this)">About Us</a></li>
+				<li><a href="portfolio.html" onclick="return link(this)">Portfolio</a></li>
+				<li><a href="gallery.html" onclick="return link(this)">Image Gallery</a></li>
+				<li><a href="contact.html" onclick="return link(this)">Contact</a></li>
+				<li><a href="styles.html" onclick="return link(this)">Styles</a></li>				
+			</ul>
+		
+		</div> <!-- /nav -->
+		
+	</div> <!-- /header -->
+	
+	<!-- CONTENT -->
+	<div id="content">	
+
+		<h2 class="page-title">Heading H2</h2>
+		
+		<h3>Heading H3</h3>		
+		
+		<h4>Heading H4</h4>	
+		
+		<h5>Heading H5</h5>	
+		
+		<h6>Heading H6</h6>	
+		
+		<h2>Full-width image</h2>
+		
+		<div class="width100"><img src="images/img-01-big.jpg" alt="" /></div>
+
+		<!-- TEXT ALIGNMENT -->
+		<h2>Text alignment</h2>
+		
+		<p class="t-left">This text is aligned to the left</p>
+		
+		<p class="t-center">This text is aligned to the middle</p>
+		
+		<p class="t-right">This text is aligned to the right</p>		
+
+		<!-- UNORDERED LIST -->
+		<h2>Unordered List</h2>
+		
+		<ul>
+			<li>Lorem ipsum dolor sit amet</li>
+			<li>Lorem ipsum dolor sit amet</li>
+			<li>Lorem ipsum dolor sit amet
+				<ul>
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Lorem ipsum dolor sit amet</li>
+				</ul>
+			</li>
+			<li>Lorem ipsum dolor sit amet</li>
+			<li>Lorem ipsum dolor sit amet</li>
+		</ul>
+		
+		<!-- TABLE -->
+		<h2>Table</h2>
+		
+		<table>
+			<tr>
+				<th>Table header</th>
+				<th>Table header</th>
+				<th>Table header</th>
+			</tr>
+			<tr>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+			</tr>
+			<tr class="even">
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+			</tr>
+			<tr>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+			</tr>
+			<tr class="even">
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+			</tr>
+			<tr>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+			</tr>
+		</table>
+
+		<!-- FORM -->
+		<h2>Form</h2>
+		
+		<fieldset>
+		
+			<legend>Form Title</legend>
+			
+			<form action="#" method="post">
+
+				<dl>
+					<dt>Name:</dt>
+					<dd><input type="text" size="30" name="" class="input-text" /></dd>
+					
+					<dt>E-mail:</dt>
+					<dd><input type="email" size="30" name="" class="input-text" /></dd>
+
+					<dt>Phone:</dt>
+					<dd><input type="tel" size="30" name="" class="input-text" /></dd>
+
+					<dt>Message:</dt>
+					<dd><textarea cols="80" rows="7" class="input-text"></textarea></dd>
+
+					<dt>Options:</dt>
+					<dd>
+						<label><input type="checkbox" /> Option</label>
+						<label><input type="checkbox" /> Option</label>
+						<label><input type="checkbox" /> Option</label>
+					</dd>
+					
+					<dt>Options:</dt>
+					<dd>
+						<label><input type="radio" /> Option</label>
+						<label><input type="radio" /> Option</label>
+						<label><input type="radio" /> Option</label>
+					</dd>
+				</dl>
+					
+				<p class="nomb"><input type="submit" value="Submit message" class="input-submit" /></p>
+
+			</form>
+			
+		</fieldset>		
+		
+		<!-- PAGINATION -->
+		<p class="pagination box">
+			<a href="#" onclick="return link(this)" class="pagination-step">&laquo;</a>
+			<a href="#" onclick="return link(this)">1</a>
+			<strong>2</strong>
+			<a href="#" onclick="return link(this)">3</a>
+			<a href="#" onclick="return link(this)">4</a>
+			<a href="#" onclick="return link(this)">5</a>
+			<a href="#" onclick="return link(this)" class="pagination-step">&raquo;</a>
+		</p>
+		
+		<!-- IMAGE FLOATING -->
+		<h2>Image floating</h2>
+
+		<p><img src="images/img-01.jpg" alt="" class="f-right" /> Lorem ipsum dolor site amet, cons ectetuerem adipiscing elit. Fuscele odio lectus, sodales est eget, convallis eu, posuere non, risus.</p>
+
+		<p><img src="images/img-02.jpg" alt="" class="f-left" /> Lorem ipsum dolor site amet, cons ectetuerem adipiscing elit. Fuscele odio lectus, sodales est eget, convallis eu, posuere non, risus.</p>
+		
+		<div class="fix"></div>
+		
+	</div> <!-- /content -->
+	
+	<!-- FOOTER -->
+	<div id="footer">
+	
+		<p id="footer-button"><a onclick="jQuery('html,body').animate({scrollTop:0},'slow');" href="javascript:void(0);">Back on top</a></p>
+	
+		<p>&copy; 2011 <a href="http://www.motemplates.com/">MoTemplates.com</a></p>
+		
+	</div> <!-- /footer -->
+
+</div> <!-- /wrapper -->
+
+</body>
+</html>

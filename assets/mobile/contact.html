@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	
+	<link rel="apple-touch-icon" href="images/icon.png" />
+	<link rel="apple-touch-startup-image" href="images/splash.png">
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/reset.css" />	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/skin.css" />
+	
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.slider.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("#nav").hide(); 
+			$(".toggle").click(function() {
+				$(this).next().slideToggle("fast");
+				return false;
+			});
+	});
+	</script>
+	
+	<title>YourSiteName</title>
+</head>
+
+<body onorientationchange="Orientation();">
+
+<div id="wrapper">
+
+	<!-- HEADER -->
+	<div id="header">
+	
+		<h1 id="logo">TOTO</h1>
+
+		<!-- NAVIGATION -->
+		<div id="nav">
+		
+			
+		<ul class="group">
+			<li><a href="portfolio.html" onclick="return link(this)">Know About Blood</a></li>
+			<li><a href="about.html" onclick="return link(this)">About Us</a></li>
+			
+			<li><a href="contact.html" onclick="return link(this)">About Hospital</a></li>
+			<li></li>			
+		</ul>
+	
+		</div> <!-- /nav -->
+		
+	</div> <!-- /header -->
+	
+	<!-- CONTENT -->
+	<div id="content">	
+
+		<h2 class="page-title">Contact</h2>
+
+		<!-- ADDRESS -->
+		<div class="text-box">
+		
+			<p>
+				<strong>ARTH Medical Centre</strong><br />
+			Street Brahmangalli<br />
+				Karwar(581301) Karnataka. <br />
+				<a href="mailto:arthmedicalcentre@gmail.com">arthmedicalcentre@gmail.com</a><br />
+							
+			</p>
+		
+		</div> <!-- /text-box -->
+		
+		<!-- SHOW ON MAP -->
+	
+
+		<!-- CONTACT FORM -->
+	  <fieldset>
+		
+			<legend>Contact </legend>
+			
+			<form action="#" method="post">
+
+				<dl>
+					<dt>Name: Dr Anvith Nayak</dt>
+					
+					<dt>E-mail:dareanvith@gmail.com </dt>
+				<dt>Phone: 9945201683</dt>
+					
+			  <dt>&nbsp;</dt>
+                    <br>
+                      <br>
+                    
+                   
+                    
+                    
+                    <dt>Name: Dr Vijayalaxmi Nayak</dt>
+                    <dt>E-mail:naikvijayalaxmi@gmail.com </dt>
+					<dt>Phone: 80888844553</dt>
+					<dt>&nbsp;</dt>
+					<dt>&nbsp;</dt>
+        </form>
+			
+		</fieldset>		
+		
+	</div> <!-- /content -->
+	
+	<!-- FOOTER --><!-- /footer -->
+
+</div> <!-- /wrapper -->
+
+</body>
+</html>

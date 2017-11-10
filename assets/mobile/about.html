@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	
+	<link rel="apple-touch-icon" href="images/icon.png" />
+	<link rel="apple-touch-startup-image" href="images/splash.png">
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/reset.css" />	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/skin.css" />
+	
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.slider.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("#nav").hide(); 
+			$(".toggle").click(function() {
+				$(this).next().slideToggle("fast");
+				return false;
+			});
+	});
+	</script>
+	
+	<title>YourSiteName</title>
+</head>
+
+<body onorientationchange="Orientation();">
+
+<div id="wrapper">
+
+	<!-- HEADER -->
+	<div id="header">
+	
+		<h1 id="logo"><a href="index.html" onclick="return link(this)">TOTO</a></h1>
+
+		<!-- NAVIGATION -->
+		<div id="nav">
+		
+			
+		<ul class="group">
+			<li><a href="portfolio.html" onclick="return link(this)">Know About Blood</a></li>
+			<li><a href="about.html" onclick="return link(this)">About Us</a></li>
+			
+			<li><a href="contact.html" onclick="return link(this)">About Hospital</a></li>
+			<li></li>			
+		</ul>
+	
+		</div> <!-- /nav -->
+		
+	</div> <!-- /header -->
+	
+	<!-- CONTENT -->
+	<div id="content">	
+
+		<h2 class="page-title">About Us</h2><!-- /text-box -->
+		
+
+    <h2>Our team</h2>
+		
+		<ul class="team box">
+			<li class="box">
+				<img src="images/sum.jpg" alt="" width="75" height="80" class="f-left" />
+  <strong>Sumaiya Nadaf</strong><br /> 
+				Android Developers<br /><br />Completed BCA from Kamadhenu BCA College Karwar 2013-16<br /><a href="#">sumaiyafnadaf@gmail.com</a>
+			</li>
+			<li class="box">
+				<img src="images/vshk.jpg" alt="" width="80" height="80" class="f-left" />
+				<strong>Vishaka Shet</strong><br />
+				Android Developers<br /><br />Completed BCA from Kamadhenu BCA College Karwar 2013-16<br /><a href="#">shetvishaka1111@gmail.coom</a>
+			</li>
+			
+		</ul>
+		
+	</div> <!-- /content -->
+	
+	<!-- FOOTER --><!-- /footer -->
+
+</div> <!-- /wrapper -->
+
+</body>
+</html>
